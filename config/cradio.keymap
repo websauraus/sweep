@@ -91,10 +91,10 @@
 		
 		tri_layer {
 		bindings = <
-		&kp ESC &kp 1 &kp 2 &kp 3 &kp 4 					&bt BT_CLR &kp F7 &kp F8 &kp F9 &kp F12
+		&kp ESC &kp N1 &kp N2 &kp N3 &kp N4 					&bt BT_CLR &kp F7 &kp F8 &kp F9 &kp F12
 		&kp LSHIFT &kp Q &kp W &kp E &kp R 					&bt BT_NXT &mt RSHIFT F1 &mt RCTRL F2 &mt RALT F3 &mt RWIN F10
 		&kp LCTRL &kp A &kp S &kp D &kp F  					&bt BT_PRV &kp F4 &kp F5 &kp F6 &kp F11
-					 &kp TAB &kp SPC  				&trans &trans 
+					 &kp TAB &kp SPC  				&tog 3 &none 
 		>;
 		};	
         
