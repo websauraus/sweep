@@ -11,7 +11,7 @@
 
 &mt {
   //  flavor = "tap-preferred";
-   // tapping_term_ms = <200>;
+   // tapping_term_ms = <250>;
 };
 
 / { 
@@ -82,19 +82,19 @@
 		
 		right_layer {
 		bindings = <
-		&none &none &none &none &none			  				&none &kp PG_UP &kp PG_DN &none &none
+		&none &none &none &none &none			  			&none &kp PG_UP &kp PG_DN &none &none
 		&kp LWIN &kp LALT &kp LCTRL &kp LSHIFT &none				&kp LEFT &kp UP &kp DOWN &kp RIGHT &kp RET 
-		&none &none &none &none &none 				    			&none &kp ESC &kp TAB &kp CAPS &none
-				&kp DEL &kp BSPC  					&mo 3 &mo 2 
+		&none &none &none &none &none 				    		&none &kp ESC &kp TAB &kp CAPS &none
+				&kp DEL &kp BSPC  					&tog 3 &mo 2 
 		>;
 		};	
 		
 		tri_layer {
 		bindings = <
-		&kp NUM_1  &kp NUM_2    &kp NUM_3    &kp NUM_4    &kp NUM_5 			&trans &trans   &trans   &trans  &trans
-		&kp F1 &kp F2 &kp F3 &kp F4 &kp F5  						&trans &kp PG_UP  &kp K_VOL_UP &kp K_MUTE &trans 
-		&bt BT_CLR  &bt BT_NXT &bt BT_PRV &kp F6 &kp F7   				&trans &kp PG_DN  &kp K_VOL_DN  &trans &trans   
-					 &trans &trans  					&trans &trans 
+		&kp ESC &kp 1 &kp 2 &kp 3 &kp 4 					&bt BT_CLR &kp F7 &kp F8 &kp F9 &kp F12
+		&kp LSHIFT &kp Q &kp W &kp E &kp R 					&bt BT_NXT &mt RSHIFT F1 &mt RCTRL F2 &mt RALT F3 &mt RWIN F10
+		&kp LCTRL &kp A &kp S &kp D &kp F  					&bt BT_PRV &kp F4 &kp F5 &kp F6 &kp F11
+					 &kp TAB &kp SPC  				&trans &trans 
 		>;
 		};	
         
