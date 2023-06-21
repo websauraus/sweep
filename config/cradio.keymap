@@ -68,7 +68,7 @@ behaviors {
         keymap {
                 compatible = "zmk,keymap";
                 
-       		default_layer {
+       		layer1 {
 		bindings = <
 		&kp W &kp G &kp D &kp F &kp B 						&kp Q &kp L  &kp U    &kp O   &kp Y 
 		&hm LWIN R &hm LALT S &hm LCTRL T &hm LSHIFT H &kp K 			&kp J &hm RSHIFT N &hm RCTRL E &hm RALT A &hm RWIN I
@@ -77,16 +77,16 @@ behaviors {
 		>;
 		};
 
-       		left_layer {
+       		layer2 {
 		bindings = <
 		&kp LBKT &kp N7 &kp N8 &kp N9 &kp RBKT					&none	&none	&none	&none	&none
 		&kp BSLH &kp N1 &kp N2 &kp N3 &kp SEMI					&none	&kp RSHIFT &kp RCTRL &kp RALT &kp RWIN
 		&kp GRAVE &kp N4 &kp N5 &kp N6 &kp MINUS 				&none	&none	&none	&none	&none
-					    &mo 1  &none  				&kp N0 &kp EQUAL 
+					    &mo 1  &tog 4  				&kp N0 &kp EQUAL 
 		>;
 		};
 		
-		right_layer {
+		layer3 {
 		bindings = <
 		&none &none &none &none &none			  			&none &kp PG_UP &kp PG_DN &none &none
 		&kp LWIN &kp LALT &kp LCTRL &kp LSHIFT &none				&kp LEFT &kp UP &kp DOWN &kp RIGHT &kp RET 
@@ -95,12 +95,21 @@ behaviors {
 		>;
 		};	
 		
-		tri_layer {
+		layer4 {
 		bindings = <
-		&kp ESC &kp N1 &kp N2 &kp N3 &kp N4 					&bt BT_CLR &kp F7 &kp F8 &kp F9 &kp F12
-		&kp LSHIFT &kp Q &kp W &kp E &kp R 					&bt BT_NXT &hm RSHIFT F1 &hm RCTRL F2 &hm RALT F3 &hm RWIN F10
-		&kp LCTRL &kp A &kp S &kp D &kp F  					&bt BT_PRV &kp F4 &kp F5 &kp F6 &kp F11
-					 &kp TAB &kp SPC  				&tog 3 &none 
+		&kp ESC &kp N1 &kp N2 &kp N3 &kp N4 					&kp N5 &kp N6 &kp N7 &kp N8 &kp N9
+		&kp LSHIFT &kp Q &kp W &kp E &kp R 					&kp T &kp Y &kp U &kp I &kp O
+		&kp LCTRL &kp A &kp S &kp D &kp F  					&kp G &kp H &kp J &kp K &kp L
+					 &kp TAB &kp SPC  				&tog 3 &kp LALT
+		>;
+		};	
+
+		layer5 {
+		bindings = <
+		&kp F12 &kp F7 &kp F8 &kp F9 &bt BT_CLR					&none	&none	&none	&none	&none
+		&kp F10 &kp F1 &kp F2 &kp F3 &bt BT_NXT 				&none	&kp RSHIFT &kp RCTRL &kp RALT &kp RWIN
+		&kp F11 &kp F4 &kp F5 &kp F6 &bt BT_PRV					&none	&none	&none	&none	&none
+					 &none &tog 4  					&none &none
 		>;
 		};	
         
